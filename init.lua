@@ -168,13 +168,15 @@ vim.o.confirm = true
 
 -- Neovide Specific Configuration
 if vim.g.neovide then
-  vim.o.guifont = "JetBrainsMono Nerd Font Mono,Courier New:h10" 
+  vim.o.guifont = 'JetBrainsMono Nerd Font Mono,Courier New:h10'
   vim.opt.linespace = 3
-  vim.g.neovide_opacity = 0.9
+  vim.g.neovide_window_blurred = true
+  vim.g.neovide_opacity = 0.8
   vim.g.neovide_theme = 'auto'
   vim.g.neovide_refresh_rate = 60
   vim.g.neovide_confirm_quit = true
   vim.g.neovide_remember_window_size = true
+  vim.g.neovide_cursor_vfx_mode = 'railgun'
 end
 
 -- [[ Basic Keymaps ]]
